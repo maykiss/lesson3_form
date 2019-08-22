@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homework</title>
+</head>
+<body>
+   <!-- Форма регистрации -->
+    <form action="https://fom.in.ua/echo" method="POST">
+    <h2>Регистрация</h2>
+        <input type="text" name="firstname" placeholder="Имя"><br>
+        <input type="text" name="secondname" placeholder="Фамилия"><br>
+        <input type="password" name="password" placeholder="Введите пароль"><br>
+        <input type="password" name="password" placeholder="Повторите пароль"><br>
+        <input type="email" name="email" placeholder="Введите ваш email"><br>
+        <input type="checkbox" name="save" id="save">
+        <label for="save">Запомнить меня</label><br>
+        <input type="submit" value="Регистрация">
+   </form>
+ <br><hr> 
+  <!-- Форма авторизации -->
+   
+    <form action="https://fom.in.ua/echo" method="POST">
+    <h2>Авторизация</h2>
+        <input type="text" name="login" placeholder="Логин"><br>
+        <input type="password" name="password" placeholder="Введите пароль"><br>
+        <label><input type="checkbox" name="save_me" value="save_me" >Запомнить меня <br></label>
+        <input type="submit" value="Войти">
+    </form> 
+   
+      <br><hr>
+       <!-- Форма поиска машин -->
+     
+    <form action="https://fom.in.ua/echo" method="GET">
+    <h2>Форма поиска автомобиля</h2>
+        <p><b>Выберите тип кузова:</b></p>
+        <select name="car" id="kuzov">
+            <option selected=selected>
+            <option value="Sedan">Седан</option>
+            <option value="Hatchback">Хэтчбек</option>
+            <option value="Universal">Универсал</option>
+            <option value="Liftbek">Лифтбэк</option>
+            <option value="Coupe">Купе</option>
+            <option value="Cabriolet">Кабриолет</option>
+            <option value="Roadster">Родстер</option>
+            <option value="SUV">Внедорожник</option>
+            <option value="Crossover">Кроссовер</option>
+            <option value="Pickup">Пикап</option>
+        </select>
+        <p><b>Выберите марку авто:</b></p>
+        <select name="car" id="mark_car">
+            <option selected=selected>
+            <option value="Acura">Acura</option>
+            <option value="BMW">BMW</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Suzuki">Suzuki</option>
+            <option value="Subaru">Subaru</option>
+            <option value="Opel">Opel</option>
+            <option value="Honda">Honda</option>
+            <option value="Dacha">Dacha</option>
+        </select>
+            
+        <p><b>Выберите цену:</b></p>
+            <input type="text"  name="price" placeholder="от">
+            <input type="text"  name="price" placeholder="до">
+            
+            <p><b>Год выпуска:</b></p>
+            <select name="years" id="from">
+                <option selected=selected>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+            </select>   
+            <select name="years" id="before">
+                <option selected=selected>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+           </select>
+           
+            <p><b>Состояние:</b></p>
+                <input type="checkbox" name="new" id="new">
+                    <label for="new">Новая</label> 
+                <input type="checkbox" name="not_beaten" id="not_beaten"> 
+                    <label for="not_beaten">Не битая</label>
+                <input type="checkbox" name="on_credit" id="on_credit"> 
+                    <label for="on_credit">В кредите</label>
+                <input type="checkbox" name="not_cleared" id="not_cleared"> 
+                    <label for="not_cleared">Не растаможенная</label>
+                
+        <p><b>Тип топлива:</b></p>
+                <input type="checkbox" name="petrol" id="petrol">
+                    <label for="petrol">Бензин</label>
+                <input type="checkbox" name="gas" id="gas">
+                    <label for="gas">Газ</label>
+                <input type="checkbox" name="diesel" id="diesel">
+                    <label for="diesel">Дизель</label>
+  
+        <p><b>Тип коробки передач:</b></p>
+                <input type="checkbox" name="mechanics" id="mechanics">
+                    <label for="mechanics">Механика</label>
+                <input type="checkbox" name="auto" id="auto">
+                    <label for="auto">Автомат</label>
+                    
+        <p><b>Страна производитель:</b></p>
+                <input type="radio" name="country" value="ukraine" id="1">
+                    <label for="1"> Украина</label>
+                <input type="radio" name="country" value="poland" id="2">
+                    <label for="2"> Польша</label>
+                <input type="radio" name="country" value="litva" id="3">
+                    <label for="3"> Литва</label>
+
+        <p><b>Цвет:</b></p>
+            <select name="color">
+                <option value="red">Красный</option>
+                <option value="yellow">Желтый</option>
+                <option value="grey">Серый</option>
+                <option value="black">Черный</option>
+            </select>
+        <p><b>Комфорт:</b></p>
+                <input type="checkbox" name="luk" id="lux">
+                    <label for="lux">Люк</label>
+                <input type="checkbox" name="salon_koja" id="salon_koja">
+                    <label for="salon_koja">Кожаный салон</label>
+                <input type="checkbox" name="klimatcontrol" id="klimatcontrol">
+                    <label for="klimatcontrol">Климат контроль</label>
+                <input type="checkbox" name="ABS" id="ABS">
+                    <label for="ABS">Антиблокировочная система ABS</label> <br>
+                <input type="checkbox" name="air" id="air">
+                    <label for="air">Кондиционер</label>
+                <input type="checkbox" name="parktronik" id="parktronik">
+                    <label for="parktronik">Парктроник</label>
+                <input type="checkbox" name="audioCD" id="audioCD">
+                    <label for="audioCD">Аудиосистема CD</label>
+                <input type="checkbox" name="GPS" id="GPS">
+                    <label for="GPS">GPS</label>  <br><p></p>
+
+                    <input type="reset"><input type="submit">
+   </form>
+   <hr>
+</body>
+</html>
